@@ -1,7 +1,7 @@
 import { useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Activity, Terminal, Shield, Zap, Info, AlertTriangle, CheckCircle, Database } from 'lucide-react';
-import { FixedSizeList, ListImperativeAPI } from 'react-window';
+import { List, ListImperativeAPI } from 'react-window';
 import { useActivityStore } from '../store/activityStore';
 import { ActivityLog } from '../types';
 

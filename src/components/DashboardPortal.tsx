@@ -72,7 +72,7 @@ export default function DashboardPortal({ isOpen, onClose, widgets }: DashboardP
                         breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
                         cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
                         rowHeight={100}
-                        draggableHandle=".widget-drag-handle"
+                        dragConfig={{ handle: '.widget-drag-handle' }}
                         onLayoutChange={onLayoutChange}
                     >
                         {widgets.map((w) => (

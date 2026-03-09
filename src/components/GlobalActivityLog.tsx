@@ -1,8 +1,7 @@
 import { useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Activity, Terminal, Shield, Zap, Info, AlertTriangle, CheckCircle, Database } from 'lucide-react';
-import { FixedSizeList } from 'react-window';
-const List = FixedSizeList;
+import { List, ListImperativeAPI } from 'react-window';
 import { useActivityStore } from '../store/activityStore';
 import { ActivityLog } from '../types';
 
@@ -13,7 +12,7 @@ interface GlobalActivityLogProps {
 
 export default function GlobalActivityLog({ isOpen, onClose }: GlobalActivityLogProps) {
     const { logs, clearLogs } = useActivityStore();
-    const listRef = useRef<FixedSizeList>(null);
+    const listRef = useRef<ListImperativeAPI>(null);
 
     const getIcon = (category: ActivityLog['category']) => {
         switch (category) {

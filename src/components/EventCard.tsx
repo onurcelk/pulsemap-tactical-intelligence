@@ -218,6 +218,6 @@ export const EventCard: React.FC<EventCardProps> = React.memo(({ event, isSelect
       </div>
     </motion.div>
   );
-};
+});
 
 export default EventCard;

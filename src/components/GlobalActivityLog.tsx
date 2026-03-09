@@ -13,7 +13,7 @@ interface GlobalActivityLogProps {
 
 export default function GlobalActivityLog({ isOpen, onClose }: GlobalActivityLogProps) {
     const { logs, clearLogs } = useActivityStore();
-    const listRef = useRef<List>(null);
+    const listRef = useRef<FixedSizeList>(null);
 
     const getIcon = (category: ActivityLog['category']) => {
         switch (category) {

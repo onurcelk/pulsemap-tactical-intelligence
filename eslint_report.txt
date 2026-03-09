@@ -1,0 +1,254 @@
+﻿
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\public\mockServiceWorker.js
+  1:1  warning  Unused eslint-disable directive (no problems were reported)
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\server.ts
+  1481:27  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  1726:12  error  'e' is defined but never used                                          @typescript-eslint/no-unused-vars
+  1726:15  error  Empty block statement                                                  no-empty
+  2094:30  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2094:38  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2096:17  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2233:11  error  The value assigned to 'location' is not used in subsequent statements  no-useless-assignment
+  2327:37  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2327:45  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2328:35  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2338:18  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2342:11  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2342:19  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2348:37  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2361:22  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2384:48  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2389:27  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2403:27  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2433:18  error  'e' is defined but never used                                          @typescript-eslint/no-unused-vars
+  2442:52  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2453:50  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2455:22  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2464:23  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2467:14  error  'e' is defined but never used                                          @typescript-eslint/no-unused-vars
+  2467:17  error  Empty block statement                                                  no-empty
+  2480:54  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2482:24  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2496:25  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2500:14  error  'e' is defined but never used                                          @typescript-eslint/no-unused-vars
+  2500:17  error  Empty block statement                                                  no-empty
+  2568:25  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2590:20  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2613:25  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2613:35  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2613:46  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2628:45  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2628:55  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2669:51  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2669:61  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2715:43  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2723:21  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2725:19  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2726:16  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2740:17  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2749:24  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2750:21  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2870:40  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2873:21  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2874:18  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2910:17  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2927:49  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2927:59  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  2941:25  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  3814:5   error  'aircraftStore' is never reassigned. Use 'const' instead               prefer-const
+  3814:37  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  3815:5   error  'shipStore' is never reassigned. Use 'const' instead                   prefer-const
+  3815:33  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  3876:16  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  3884:9   error  'lat' is never reassigned. Use 'const' instead                         prefer-const
+  3887:9   error  'lng' is never reassigned. Use 'const' instead                         prefer-const
+  3891:9   error  'history' is never reassigned. Use 'const' instead                     prefer-const
+  3919:19  error  Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  3926:9   error  'lat' is never reassigned. Use 'const' instead                         prefer-const
+  3929:9   error  'lng' is never reassigned. Use 'const' instead                         prefer-const
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\AuthModal.tsx
+  88:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\BreakingAlertSystem.tsx
+    1:28  error  'useRef' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  178:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\BreakingAlertSystem.tsx:178:5
+  176 |
+  177 |   useEffect(() => {
+> 178 |     setHistory(getAlertHistory());
+      |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  179 |   }, []);
+  180 |
+  181 |   const handleClear = () => {  react-hooks/set-state-in-effect
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\EmailPreviewModal.tsx
+  3:13  error  'Send' is defined but never used          @typescript-eslint/no-unused-vars
+  3:32  error  'MapPin' is defined but never used        @typescript-eslint/no-unused-vars
+  3:40  error  'ExternalLink' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\EventCard.tsx
+   65:12  error  'e' is defined but never used             @typescript-eslint/no-unused-vars
+   65:15  error  Empty block statement                     no-empty
+  157:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  157:63  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  160:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  163:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  163:75  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\HeatmapLayer.tsx
+   8:15  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  17:9   error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\Map.tsx
+   22:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   76:30  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  154:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  446:77  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  457:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  463:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  479:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  527:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  529:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  532:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  543:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  551:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\SEOHead.tsx
+  16:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\Sidebar.tsx
+  186:3   error  'onCloseEvent' is defined but never used                                                                             @typescript-eslint/no-unused-vars
+  249:28  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  250:28  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  259:5   error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+  261:7   error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\TutorialOverlay.tsx
+   3:60  error  'CheckCircle2' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+  73:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\TutorialOverlay.tsx:73:7
+  71 |   useEffect(() => {
+  72 |     if (isOpen) {
+> 73 |       setCurrentSlide(0);
+     |       ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  74 |     }
+  75 |   }, [isOpen]);
+  76 |  react-hooks/set-state-in-effect
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\admin\EventModal.tsx
+    3:13  error  'MapPin' is defined but never used        @typescript-eslint/no-unused-vars
+    8:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  109:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\admin\NotificationsPanel.tsx
+  28:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\components\auth\TwoFactorSetup.tsx
+  28:23  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+  46:21  error  'data' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  54:23  error  Unexpected any. Specify a different type   @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\hooks\useSocket.ts
+   9:52  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+  32:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\hooks\useSocket.ts:32:9
+  30 |         });
+  31 |
+> 32 |         setSocket(socketInstance);
+     |         ^^^^^^^^^ Avoid calling setState() directly within an effect
+  33 |
+  34 |         return () => {
+  35 |             socketInstance.disconnect();  react-hooks/set-state-in-effect
+  39:61  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\lib\analytics.ts
+  10:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\lib\auth.tsx
+    8:12  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+   12:28  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+   20:42  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  103:41  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  108:25  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  122:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\lib\notifications.ts
+  188:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\pages\Landing.tsx
+   2:34  error  'Shield' is defined but never used            @typescript-eslint/no-unused-vars
+  12:17  error  'profile' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\pages\MapApplication.tsx
+   14:3   error    'Globe' is defined but never used                                                                                           @typescript-eslint/no-unused-vars
+   16:3   error    'RefreshCw' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+   18:3   error    'Moon' is defined but never used                                                                                            @typescript-eslint/no-unused-vars
+   19:3   error    'Sun' is defined but never used                                                                                             @typescript-eslint/no-unused-vars
+   22:3   error    'Radio' is defined but never used                                                                                           @typescript-eslint/no-unused-vars
+   23:3   error    'Activity' is defined but never used                                                                                        @typescript-eslint/no-unused-vars
+   24:3   error    'ChevronUp' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+   25:3   error    'ChevronDown' is defined but never used                                                                                     @typescript-eslint/no-unused-vars
+   27:3   error    'Languages' is defined but never used                                                                                       @typescript-eslint/no-unused-vars
+   30:3   error    'CalendarRange' is defined but never used                                                                                   @typescript-eslint/no-unused-vars
+   36:10  error    'supabase' is defined but never used                                                                                        @typescript-eslint/no-unused-vars
+  108:59  error    'authLoading' is assigned a value but never used                                                                            @typescript-eslint/no-unused-vars
+  114:10  error    'searchParams' is assigned a value but never used                                                                           @typescript-eslint/no-unused-vars
+  131:10  error    'loadingMsgIdx' is assigned a value but never used                                                                          @typescript-eslint/no-unused-vars
+  140:24  error    'isLiveFeedConnected' is assigned a value but never used                                                                    @typescript-eslint/no-unused-vars
+  233:6   warning  React Hook useEffect has a missing dependency: 'LOADING_MESSAGES.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  307:21  error    Unexpected any. Specify a different type                                                                                    @typescript-eslint/no-explicit-any
+  348:19  error    Unexpected any. Specify a different type                                                                                    @typescript-eslint/no-explicit-any
+  450:16  error    'err' is defined but never used                                                                                             @typescript-eslint/no-unused-vars
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\pages\admin\Dashboard.tsx
+   33:10  error  'analytics' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   33:46  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   38:56  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   58:38  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   59:37  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   60:40  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   61:45  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   67:21  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   68:22  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   78:42  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+   80:30  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  292:36  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  293:40  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  296:54  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  301:46  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  386:14  error  'err' is defined but never used                 @typescript-eslint/no-unused-vars
+  395:33  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+  411:49  error  Unexpected any. Specify a different type        @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\src\pages\admin\Login.tsx
+  33:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\onurc\Downloads\pulsemap-fixed\pulsemap_fixed\vite.config.ts
+  8:9  error  'env' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Ô£û 159 problems (156 errors, 3 warnings)
+  7 errors and 1 warning potentially fixable with the `--fix` option.
+

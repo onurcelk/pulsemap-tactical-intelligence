@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;700&display=swap');
+@import 'leaflet/dist/leaflet.css';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Outfit', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  /* Premium Light Mode - Inspired by Linear/Arc */
+  --bg: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.72);
+  --ink: #0f172a;
+  --ink-dim: #475569;
+  /* Darkened for better readability in light mode */
+  --line: #cbd5e1;
+  /* More prominent border color in light mode */
+  --accent: #ef4444;
+  --accent-glow: rgba(239, 68, 68, 0.1);
+  --success: #10b981;
+  --info: #3b82f6;
+  --glass-border: rgba(226, 232, 240, 0.8);
+  --card-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  --blue: #3b82f6;
+  --purple: #8b5cf6;
+  --orange: #f97316;
+  --indigo: #6366f1;
+  --red: #ef4444;
+  --emerald: #10b981;
+}
+
+#google_translate_element {
+  display: inline-block;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Hide suggestion popup and highlighting */
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.dark {
+  /* Tactical Command Center Mode */
+  --bg: #030712;
+  --bg-glass: rgba(3, 7, 18, 0.75);
+  --ink: #f8fafc;
+  --ink-dim: #94a3b8;
+  --line: #1e293b;
+  --accent: #ff4d4d;
+  --accent-glow: rgba(255, 77, 77, 0.2);
+  --success: #34d399;
+  --info: #60a5fa;
+  --glass-border: rgba(30, 41, 59, 1);
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  --blue: #60a5fa;
+  --purple: #a78bfa;
+  --orange: #fb923c;
+  --indigo: #818cf8;
+  --red: #f87171;
+  --emerald: #34d399;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--ink);
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── PREMIUM GLASSMORPHISM ── */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--card-shadow);
+}
+
+.dark .glass {
+  background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.8), rgba(3, 7, 18, 0.9));
+}
+
+/* ── SCROLLBAR ── */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 20px;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes radar-sweep {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* ── TACTICAL RADAR OVERLAY ── */
+.radar-sweep-overlay {
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(from 0deg, transparent 70%, rgba(14, 165, 233, 0.25) 100%);
+  animation: radar-sweep 12s linear infinite;
+  border-radius: 50%;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+@keyframes radar-glow {
+  0% {
+    filter: brightness(1) drop-shadow(0 0 0px var(--accent));
+  }
+
+  20% {
+    filter: brightness(2.5) drop-shadow(0 0 15px var(--accent));
+  }
+
+  100% {
+    filter: brightness(1) drop-shadow(0 0 0px var(--accent));
+  }
+}
+
+.radar-glow-active {
+  animation: radar-glow 1.5s ease-out forwards;
+}
+
+@keyframes radar-sweep {
+  from {
+    transform: rotate(0deg) scale(2);
+  }
+
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+
+/* ── CUSTOM MAP PINS ── */
+.custom-tactical-pin,
+.strategic-asset-pin {
+  pointer-events: auto !important;
+  z-index: 1000 !important;
+}
+
+.custom-cluster-icon {
+  pointer-events: auto !important;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+
+  70% {
+    transform: scale(1.6);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* ── HOT CARD PULSE (Intel Feed) ── */
+@keyframes card-hot-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 10px rgba(239, 68, 68, 0.12),
+      inset 0 0 0 rgba(239, 68, 68, 0);
+  }
+
+  50% {
+    box-shadow:
+      0 0 28px rgba(239, 68, 68, 0.35),
+      inset 0 0 12px rgba(239, 68, 68, 0.06);
+  }
+}
+
+.pulse-marker::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  background-color: var(--accent);
+  opacity: 0.3;
+  animation: pulse-ring 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  z-index: -1;
+}
+
+/* ── LEAFLET OVERRIDES ── */
+.leaflet-container {
+  background: var(--bg) !important;
+  font-family: inherit !important;
+}
+
+/* Tactical Dark Map Theme — softens CartoDB dark_all tiles in dark mode */
+.dark .leaflet-tile {
+  filter: brightness(0.82) contrast(0.9) saturate(0.8);
+}
+
+.dark .leaflet-tile-pane {
+  background: #1a2233 !important;
+}
+
+.leaflet-bar {
+  border: none !important;
+  box-shadow: var(--card-shadow) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.leaflet-bar a {
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+  border: none !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  transition: all 0.2s ease;
+}
+
+.leaflet-bar a:hover {
+  background: var(--line) !important;
+  color: var(--accent) !important;
+}
+
+.leaflet-control-attribution {
+  background: transparent !important;
+  font-size: 9px !important;
+  font-family: var(--font-mono);
+  opacity: 0.3;
+}
+
+/* Popup styling */
+.minimal-popup .leaflet-popup-content-wrapper,
+.strategic-popup .leaflet-popup-content-wrapper {
+  background: var(--bg);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  padding: 0;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.minimal-popup .leaflet-popup-content,
+.strategic-popup .leaflet-popup-content {
+  margin: 0;
+}
+
+/* Fix Leaflet popup tip arrow */
+.leaflet-popup-tip-container {
+  display: none !important;
+}
+
+/* Close button override */
+.leaflet-popup-close-button {
+  color: var(--ink-dim) !important;
+  right: 8px !important;
+  top: 8px !important;
+}
+
+/* Utils */
+.text-dim {
+  color: var(--ink-dim);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* ── HIDE SCROLLBAR (keep functional) ── */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+@keyframes map-popcorn {
+  0% {
+    transform: scale(0.1) translateY(-100px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  50% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.1) translateY(10px);
+  }
+  85% {
+    transform: scale(0.95) translateY(-5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.tactical-pin-animator {
+  animation: map-popcorn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+  transform-origin: center bottom;
+}

@@ -1,0 +1,5 @@
+{
+  "name": "PulseMap",
+  "description": "A minimalist live awareness map for tracking global events, conflicts, and news in real-time.",
+  "requestFramePermissions": ["geolocation"]
+}

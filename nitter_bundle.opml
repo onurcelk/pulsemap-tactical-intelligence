@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Nitter War News Bundle (Allowlist + Keywords)</title>
+  </head>
+  <body>
+
+    <!-- =========================
+         BASE INSTANCE
+         Change base if needed:
+         https://nitter.poast.org
+         ========================= -->
+
+    <outline text="Allowlist - Wire / Major News" title="Allowlist - Wire / Major News">
+      <outline text="@Reuters"  type="rss" xmlUrl="https://nitter.poast.org/Reuters/rss" />
+      <outline text="@AP"       type="rss" xmlUrl="https://nitter.poast.org/AP/rss" />
+      <outline text="@AFP"      type="rss" xmlUrl="https://nitter.poast.org/AFP/rss" />
+      <outline text="@BBCWorld" type="rss" xmlUrl="https://nitter.poast.org/BBCWorld/rss" />
+      <outline text="@BBCBreaking" type="rss" xmlUrl="https://nitter.poast.org/BBCBreaking/rss" />
+      <outline text="@SkyNews"  type="rss" xmlUrl="https://nitter.poast.org/SkyNews/rss" />
+      <outline text="@FT"       type="rss" xmlUrl="https://nitter.poast.org/FT/rss" />
+      <outline text="@TheEconomist" type="rss" xmlUrl="https://nitter.poast.org/TheEconomist/rss" />
+      <outline text="@guardian" type="rss" xmlUrl="https://nitter.poast.org/guardian/rss" />
+      <outline text="@nytimes"  type="rss" xmlUrl="https://nitter.poast.org/nytimes/rss" />
+      <outline text="@washingtonpost" type="rss" xmlUrl="https://nitter.poast.org/washingtonpost/rss" />
+      <outline text="@WSJ"      type="rss" xmlUrl="https://nitter.poast.org/WSJ/rss" />
+      <outline text="@AlJazeera" type="rss" xmlUrl="https://nitter.poast.org/AlJazeera/rss" />
+      <outline text="@AJEnglish" type="rss" xmlUrl="https://nitter.poast.org/AJEnglish/rss" />
+      <outline text="@dwnews"   type="rss" xmlUrl="https://nitter.poast.org/dwnews/rss" />
+      <outline text="@france24" type="rss" xmlUrl="https://nitter.poast.org/france24/rss" />
+      <outline text="@euronews" type="rss" xmlUrl="https://nitter.poast.org/euronews/rss" />
+      <outline text="@NHKWORLD_News" type="rss" xmlUrl="https://nitter.poast.org/NHKWORLD_News/rss" />
+      <outline text="@CNA"      type="rss" xmlUrl="https://nitter.poast.org/CNA/rss" />
+    </outline>
+
+    <outline text="Allowlist - Conflict / Analysis / Data" title="Allowlist - Conflict / Analysis / Data">
+      <outline text="@TheStudyofWar" type="rss" xmlUrl="https://nitter.poast.org/TheStudyofWar/rss" />
+      <outline text="@ACLEDINFO"     type="rss" xmlUrl="https://nitter.poast.org/ACLEDINFO/rss" />
+      <outline text="@SIPRIorg"      type="rss" xmlUrl="https://nitter.poast.org/SIPRIorg/rss" />
+      <outline text="@IISS_org"      type="rss" xmlUrl="https://nitter.poast.org/IISS_org/rss" />
+      <outline text="@ChathamHouse"  type="rss" xmlUrl="https://nitter.poast.org/ChathamHouse/rss" />
+      <outline text="@CFR_org"       type="rss" xmlUrl="https://nitter.poast.org/CFR_org/rss" />
+      <outline text="@RUSI_org"      type="rss" xmlUrl="https://nitter.poast.org/RUSI_org/rss" />
+      <outline text="@bellingcat"    type="rss" xmlUrl="https://nitter.poast.org/bellingcat/rss" />
+      <outline text="@OSINTtechnical" type="rss" xmlUrl="https://nitter.poast.org/OSINTtechnical/rss" />
+      <outline text="@IntelCrab"     type="rss" xmlUrl="https://nitter.poast.org/IntelCrab/rss" />
+    </outline>
+
+    <outline text="Allowlist - Humanitarian / UN / NGOs" title="Allowlist - Humanitarian / UN / NGOs">
+      <outline text="@UN"      type="rss" xmlUrl="https://nitter.poast.org/UN/rss" />
+      <outline text="@UNOCHA"  type="rss" xmlUrl="https://nitter.poast.org/UNOCHA/rss" />
+      <outline text="@WHO"     type="rss" xmlUrl="https://nitter.poast.org/WHO/rss" />
+      <outline text="@WFP"     type="rss" xmlUrl="https://nitter.poast.org/WFP/rss" />
+      <outline text="@UNHCR"   type="rss" xmlUrl="https://nitter.poast.org/UNHCR/rss" />
+      <outline text="@UNICEF"  type="rss" xmlUrl="https://nitter.poast.org/UNICEF/rss" />
+      <outline text="@ICRC"    type="rss" xmlUrl="https://nitter.poast.org/ICRC/rss" />
+      <outline text="@MSF"     type="rss" xmlUrl="https://nitter.poast.org/MSF/rss" />
+      <outline text="@amnesty" type="rss" xmlUrl="https://nitter.poast.org/amnesty/rss" />
+      <outline text="@hrw"     type="rss" xmlUrl="https://nitter.poast.org/hrw/rss" />
+      <outline text="@CrisisGroup" type="rss" xmlUrl="https://nitter.poast.org/CrisisGroup/rss" />
+    </outline>
+
+    <!-- ============
+         KEYWORD RSS (global search)
+         Format: /search/rss?f=tweets&q=<urlencoded>
+         ============ -->
+    <outline text="Keyword Feeds (Global Search)" title="Keyword Feeds (Global Search)">
+      <outline text="KW: ceasefire / truce / negotiations"
+        type="rss"
+        xmlUrl="https://nitter.poast.org/search/rss?f=tweets&q=ceasefire%20OR%20truce%20OR%20negotiations%20OR%20peace%20talks%20OR%20mediator" />
+
+      <outline text="KW: airstrike / missile / drone / artillery"
+        type="rss"
+        xmlUrl="https://nitter.poast.org/search/rss?f=tweets&q=airstrike%20OR%20missile%20OR%20drone%20strike%20OR%20shelling%20OR%20artillery" />
+
+      <outline text="KW: evacuation / humanitarian corridor / aid convoy"
+        type="rss"
+        xmlUrl="https://nitter.poast.org/search/rss?f=tweets&q=evacuation%20OR%20%22humanitarian%20corridor%22%20OR%20%22aid%20convoy%22%20OR%20relief%20supplies" />
+
+      <outline text="KW: sanctions / embargo / export controls"
+        type="rss"
+        xmlUrl="https://nitter.poast.org/search/rss?f=tweets&q=sanctions%20OR%20embargo%20OR%20%22export%20controls%22%20OR%20asset%20freeze" />
+
+      <outline text="KW(TR): ateşkes / tahliye / insani yardım"
+        type="rss"
+        xmlUrl="https://nitter.poast.org/search/rss?f=tweets&q=ate%C5%9Fkes%20OR%20tahliye%20OR%20%22insani%20yard%C4%B1m%22%20OR%20%22yard%C4%B1m%20konvoyu%22%20OR%20%22sivil%20kay%C4%B1p%22" />
+    </outline>
+
+    <!-- ============
+         OPTIONAL: Keyword + Allowlist (tight)
+         Use shorter allowlist to avoid huge URLs
+         ============ -->
+    <outline text="Keyword + Allowlist (Tight)" title="Keyword + Allowlist (Tight)">
+      <outline text="Reuters/AP/AFP + breaking"
+        type="rss"
+        xmlUrl="https://nitter.poast.org/search/rss?f=tweets&q=(from%3AReuters%20OR%20from%3AAP%20OR%20from%3AAFP)%20(ceasefire%20OR%20airstrike%20OR%20missile%20OR%20evacuation%20OR%20sanctions)" />
+      <outline text="UN/ICRC/MSF + humanitarian"
+        type="rss"
+        xmlUrl="https://nitter.poast.org/search/rss?f=tweets&q=(from%3AUNOCHA%20OR%20from%3AUNHCR%20OR%20from%3AICRC%20OR%20from%3AMSF)%20(humanitarian%20OR%20aid%20OR%20evacuation%20OR%20corridor)" />
+    </outline>
+
+    <outline text="Allowlist - More Major News" title="Allowlist - More Major News">
+      <outline text="@CNN" type="rss" xmlUrl="https://nitter.poast.org/CNN/rss" />
+      <outline text="@CNNEE" type="rss" xmlUrl="https://nitter.poast.org/CNNEE/rss" />
+      <outline text="@NBCNews" type="rss" xmlUrl="https://nitter.poast.org/NBCNews/rss" />
+      <outline text="@CBSNews" type="rss" xmlUrl="https://nitter.poast.org/CBSNews/rss" />
+      <outline text="@ABC" type="rss" xmlUrl="https://nitter.poast.org/ABC/rss" />
+      <outline text="@ReutersWorld" type="rss" xmlUrl="https://nitter.poast.org/ReutersWorld/rss" />
+      <outline text="@Bloomberg" type="rss" xmlUrl="https://nitter.poast.org/business/rss" />
+      <outline text="@business" type="rss" xmlUrl="https://nitter.poast.org/business/rss" />
+      <outline text="@TheTerminal" type="rss" xmlUrl="https://nitter.poast.org/TheTerminal/rss" />
+    </outline>
+
+    <outline text="Allowlist - Regional Strong Newsrooms" title="Allowlist - Regional Strong Newsrooms">
+      <outline text="@RTErdogan? (skip) — use agencies instead" type="rss" xmlUrl="https://nitter.poast.org/AnadoluAgency/rss" />
+      <outline text="@AnadoluAgency" type="rss" xmlUrl="https://nitter.poast.org/AnadoluAgency/rss" />
+      <outline text="@TRTWorld" type="rss" xmlUrl="https://nitter.poast.org/TRTWorld/rss" />
+      <outline text="@MiddleEastEye" type="rss" xmlUrl="https://nitter.poast.org/MiddleEastEye/rss" />
+      <outline text="@TheNationalNews" type="rss" xmlUrl="https://nitter.poast.org/TheNationalNews/rss" />
+      <outline text="@TimesNow" type="rss" xmlUrl="https://nitter.poast.org/TimesNow/rss" />
+      <outline text="@Channel4News" type="rss" xmlUrl="https://nitter.poast.org/Channel4News/rss" />
+      <outline text="@itvnews" type="rss" xmlUrl="https://nitter.poast.org/itvnews/rss" />
+    </outline>
+
+    <outline text="Allowlist - Humanitarian (More)" title="Allowlist - Humanitarian (More)">
+      <outline text="@UNReliefChief" type="rss" xmlUrl="https://nitter.poast.org/UNReliefChief/rss" />
+      <outline text="@UNPeacekeeping" type="rss" xmlUrl="https://nitter.poast.org/UNPeacekeeping/rss" />
+      <outline text="@UNDPA" type="rss" xmlUrl="https://nitter.poast.org/UNDPA/rss" />
+      <outline text="@FAO" type="rss" xmlUrl="https://nitter.poast.org/FAO/rss" />
+      <outline text="@Refugees" type="rss" xmlUrl="https://nitter.poast.org/Refugees/rss" />
+      <outline text="@WFP" type="rss" xmlUrl="https://nitter.poast.org/WFP/rss" />
+      <outline text="@UNICEF" type="rss" xmlUrl="https://nitter.poast.org/UNICEF/rss" />
+    </outline>
+
+    <outline text="Allowlist - Policy / Think Tanks (More)" title="Allowlist - Policy / Think Tanks (More)">
+      <outline text="@SIPRIorg" type="rss" xmlUrl="https://nitter.poast.org/SIPRIorg/rss" />
+      <outline text="@IISS_org" type="rss" xmlUrl="https://nitter.poast.org/IISS_org/rss" />
+      <outline text="@ChathamHouse" type="rss" xmlUrl="https://nitter.poast.org/ChathamHouse/rss" />
+      <outline text="@CFR_org" type="rss" xmlUrl="https://nitter.poast.org/CFR_org/rss" />
+      <outline text="@RUSI_org" type="rss" xmlUrl="https://nitter.poast.org/RUSI_org/rss" />
+      <outline text="@CrisisGroup" type="rss" xmlUrl="https://nitter.poast.org/CrisisGroup/rss" />
+    </outline>
+
+    <outline text="Allowlist - Conflict Data / Monitors (More)" title="Allowlist - Conflict Data / Monitors (More)">
+      <outline text="@ACLEDINFO" type="rss" xmlUrl="https://nitter.poast.org/ACLEDINFO/rss" />
+    </outline>
+
+  </body>
+</opml>

@@ -1,0 +1,129 @@
+twitter_free:
+  engine: snscrape
+  poll_every_seconds: 300
+  max_items_per_run: 400
+  languages: [en, tr, ar, uk, ru]
+  require_links: true
+  drop_retweets: true
+  drop_replies: true
+
+  # "Tarafsız / yüksek güvenilirlik" ağırlıklı: ajanslar + kamu kurumları + insani yardım + çatışma veri/analiz
+  allowlist_accounts:
+    # Wire services / major newsrooms
+    - Reuters
+    - AP
+    - AFP
+    - BBCWorld
+    - BBCBreaking
+    - SkyNews
+    - FT
+    - TheEconomist
+    - WSJ
+    - nytimes
+    - washingtonpost
+    - guardian
+    - AlJazeera
+    - AJEnglish
+    - dwnews
+    - france24
+    - euronews
+    - CNA
+    - NHKWORLD_News
+    - timesofisrael
+    - haaretzcom
+    - KyivIndependent
+    - TheStudyofWar
+    - Bellingcat
+
+    # Humanitarian / intergovernmental (çatışma-insani durum odaklı)
+    - UN
+    - UNOCHA
+    - WHO
+    - WFP
+    - UNHCR
+    - UNICEF
+    - icrc
+    - MSF
+    - AmnestyOnline
+    - hrw
+    - CrisisGroup
+
+    # Conflict / data / monitoring (tarafsız veri-analiz ağırlıklı)
+    - ACLEDINFO
+    - SIPRIorg
+    - IISS_org
+    - ChathamHouse
+    - CFR_org
+    - RUSI_org
+    - UN_Disarmament
+
+  # Keyword’leri “grup” yaptım: collector bunları ayrı query olarak çalıştıracak.
+  keyword_groups:
+    conflict_core:
+      - ceasefire
+      - truce
+      - airstrike
+      - missile
+      - drone strike
+      - shelling
+      - artillery
+      - offensive
+      - incursion
+      - evacuation
+      - corridor
+      - humanitarian
+      - aid convoy
+      - refugees
+      - civilian casualties
+      - POW
+      - sanctions
+      - embargo
+      - UN Security Council
+      - IAEA
+
+    turkish_focus:
+      - ateşkes
+      - saldırı
+      - hava saldırısı
+      - füze
+      - dron
+      - topçu
+      - tahliye
+      - insani yardım
+      - yardım konvoyu
+      - sivil kayıp
+      - mülteci
+      - yaptırım
+      - ambargo
+      - BM Güvenlik Konseyi
+
+    middle_east_focus:
+      - Middle East
+      - Gaza
+      - Israel
+      - Iran
+      - Lebanon
+      - Syria
+      - Yemen
+      - Houthi
+      - Red Sea
+      - ceasefire
+      - airstrike
+
+    europe_focus:
+      - Ukraine
+      - Russia
+      - NATO
+      - European Union
+      - border crossing
+      - mobilization
+      - offensive
+
+  # Gürültü azaltma: spam/satış/coin vb. kelimeler
+  negative_keywords:
+    - airdrop
+    - giveaway
+    - crypto
+    - casino
+    - promo
+    - discount

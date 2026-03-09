@@ -1,7 +1,8 @@
 import { useRef, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Activity, Terminal, Shield, Zap, Info, AlertTriangle, CheckCircle, Database } from 'lucide-react';
-import { List, ListImperativeAPI } from 'react-window';
+import { FixedSizeList } from 'react-window';
+import type { ListImperativeAPI } from 'react-window';
 import { useActivityStore } from '../store/activityStore';
 import { ActivityLog } from '../types';
 
@@ -120,7 +121,7 @@ export default function GlobalActivityLog({ isOpen, onClose }: GlobalActivityLog
                                     <p className="text-[10px] font-mono mt-1">Waiting for system telemetry...</p>
                                 </div>
                             ) : (
-                                <List
+                                <FixedSizeList
                                     ref={listRef}
                                     height={800} // This will be constrained by flex-1 parent
                                     itemCount={logs.length}
@@ -129,7 +130,7 @@ export default function GlobalActivityLog({ isOpen, onClose }: GlobalActivityLog
                                     className="scrollbar-thin"
                                 >
                                     {Row}
-                                </List>
+                                </FixedSizeList>
                             )}
                         </div>
 

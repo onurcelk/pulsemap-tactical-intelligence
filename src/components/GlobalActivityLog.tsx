@@ -36,12 +36,12 @@ export default function GlobalActivityLog({ isOpen, onClose }: GlobalActivityLog
         }
     };
 
-    const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
+    const Row = ({ index, style, ariaAttributes }: { index: number; style: React.CSSProperties; ariaAttributes?: any }) => {
         const log = logs[index];
         if (!log) return null;
 
         return (
-            <div style={style} className="px-4 py-2 border-b border-[var(--line)]/30 hover:bg-[var(--line)]/10 transition-colors flex flex-col justify-center">
+            <div style={style} {...ariaAttributes} className="px-4 py-2 border-b border-[var(--line)]/30 hover:bg-[var(--line)]/10 transition-colors flex flex-col justify-center">
                 <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2">
                         {getIcon(log.category)}
@@ -120,16 +120,15 @@ export default function GlobalActivityLog({ isOpen, onClose }: GlobalActivityLog
                                     <p className="text-[10px] font-mono mt-1">Waiting for system telemetry...</p>
                                 </div>
                             ) : (
-                                <FixedSizeList
-                                    ref={listRef}
-                                    height={800} // This will be constrained by flex-1 parent
-                                    itemCount={logs.length}
-                                    itemSize={76}
-                                    width="100%"
+                                <List
+                                    listRef={listRef}
+                                    style={{ height: 800, width: '100%' }}
+                                    rowCount={logs.length}
+                                    rowHeight={76}
                                     className="scrollbar-thin"
-                                >
-                                    {Row}
-                                </FixedSizeList>
+                                    rowComponent={Row as any}
+                                    rowProps={{} as any}
+                                />
                             )}
                         </div>
 
